@@ -1,0 +1,116 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 24px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px 14px 0;
+  cursor: default;
+  transition: opacity 0.15s ease;
+}
+
+.stat[data-clickable='true'] {
+  cursor: pointer;
+}
+
+.stat[data-clickable='true']:hover {
+  opacity: 0.8;
+}
+
+.statIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.statIcon[data-color='gold'] {
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+  border: 1px solid color-mix(in srgb, var(--accent-gold) 25%, transparent);
+}
+
+.statIcon[data-color='blue'] {
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+  border: 1px solid color-mix(in srgb, var(--accent-blue) 25%, transparent);
+}
+
+.statIcon[data-color='teal'] {
+  background: var(--accent-teal-dim);
+  color: var(--accent-teal);
+  border: 1px solid color-mix(in srgb, var(--accent-teal) 25%, transparent);
+}
+
+.statIcon[data-color='red'] {
+  background: var(--accent-red-dim);
+  color: var(--accent-red);
+  border: 1px solid color-mix(in srgb, var(--accent-red) 25%, transparent);
+}
+
+.statIcon[data-color='muted'] {
+  background: rgba(61, 80, 112, 0.15);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.statBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.statValue.teal {
+  color: var(--accent-teal);
+}
+
+.statValue.red {
+  color: var(--accent-red);
+}
+
+.statSub {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.statSub.tealSub {
+  color: var(--accent-teal);
+  font-weight: 500;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-subtle);
+  margin: 0 24px 0 0;
+  flex-shrink: 0;
+}

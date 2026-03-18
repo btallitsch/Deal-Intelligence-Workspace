@@ -1,0 +1,138 @@
+.revBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(20, 184, 166, 0.08);
+  border: 1px solid color-mix(in srgb, var(--accent-teal) 25%, transparent);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--accent-teal);
+}
+
+.revBanner strong {
+  font-weight: 700;
+}
+
+.revBanner svg {
+  flex-shrink: 0;
+}
+
+.fgItem {
+  align-items: flex-start !important;
+  gap: 12px !important;
+}
+
+.fgLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fgTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fgMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.effortChip {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.effortChip[data-size='xs'] { color: #4ADE80; background: rgba(74,222,128,0.08); border-color: rgba(74,222,128,0.25); }
+.effortChip[data-size='sm'] { color: #A3E635; background: rgba(163,230,53,0.08); border-color: rgba(163,230,53,0.25); }
+.effortChip[data-size='md'] { color: #FACC15; background: rgba(250,204,21,0.08); border-color: rgba(250,204,21,0.25); }
+.effortChip[data-size='lg'] { color: #FB923C; background: rgba(251,146,60,0.08); border-color: rgba(251,146,60,0.25); }
+.effortChip[data-size='xl'] { color: #F87171; background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.25); }
+
+.priority {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.priority[data-priority='high'] { color: #FB923C; }
+.priority[data-priority='medium'] { color: var(--accent-gold); }
+
+.statusSelect {
+  display: flex;
+  gap: 3px;
+  margin-left: auto;
+}
+
+.statusBtn {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  padding: 2px 6px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.statusBtn:hover {
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.statusBtnActive {
+  background: var(--accent-gold-dim);
+  border-color: color-mix(in srgb, var(--accent-gold) 35%, transparent);
+  color: var(--accent-gold);
+}
+
+.fgRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.revenueTag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.revenueTagLabel {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.revenueTagValue {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent-teal);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
